@@ -1,0 +1,51 @@
+{
+    /**
+     * Required Extensions
+     * Toml:
+        bungcip.better-toml
+     * Rust:
+        serayuzgur.crates
+        rust-lang.rust
+     * Shell:
+        foxundermoon.shell-format
+     */
+    /* Language-Specific */
+    // TOML
+    "[toml]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    // Rust
+    "[rust]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true
+    },
+    "rust-client.channel": "nightly",
+    "rust-client.revealOutputChannelOn": "error",
+    "rust-client.rlsPath": "rls",
+    "rust-client.rustupPath": "rustup",
+    "rust-client.updateOnStartup": true,
+    "rust.all_features": true,
+    "rust.unstable_features": true,
+    "rust.build_on_save": false,
+    "rust.cfg_test": false,
+    "rust.clippy_preference": "opt-in",
+    "rust.racer_completion": true,
+    "rust.rustfmt_path": "rustfmt",
+    "rust.wait_to_build": 2000,
+    "rust.use_crate_blacklist": true,
+    // Shell
+    "[shellscript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "shellformat.effectLanguages": [
+        "shellscript",
+        "dotenv",
+        "ignore",
+        "gitignore",
+        "xinitrc"
+    ],
+    "shellformat.flag": "-i 2 -bn -ci -sr -kp"
+}
