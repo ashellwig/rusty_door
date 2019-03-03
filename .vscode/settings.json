@@ -16,11 +16,6 @@
         "editor.insertSpaces": true
     },
     // Rust
-    "[rust]": {
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true,
-        "editor.formatOnSave": true
-    },
     "rust-client.channel": "nightly",
     "rust-client.revealOutputChannelOn": "error",
     "rust-client.rlsPath": "rls",
@@ -29,12 +24,17 @@
     "rust.all_features": true,
     "rust.unstable_features": true,
     "rust.build_on_save": false,
-    "rust.cfg_test": false,
+    "rust.cfg_test": true,
     "rust.clippy_preference": "opt-in",
     "rust.racer_completion": true,
     "rust.rustfmt_path": "rustfmt",
-    "rust.wait_to_build": 2000,
+    "rust.wait_to_build": 1000,
     "rust.use_crate_blacklist": true,
+    "[rust]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true
+    },
     // Shell
     "[shellscript]": {
         "editor.tabSize": 2,
